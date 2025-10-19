@@ -2,6 +2,7 @@ package main
 
 // global scope
 var url = "https://hellojkhgkuyh.com"
+var name = "RamDev is here "
 
 func main() {
 	// functional scope
@@ -9,7 +10,7 @@ func main() {
 	var price float32 = 34.5
 	println(message, price, url)
 	println("helo")
-
+	printData()
 	{
 		// block scope
 	}
