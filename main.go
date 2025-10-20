@@ -15,20 +15,17 @@ func init() {
 }
 
 // function to calculate the tax
-
-func calculateTax(price float64) {
+func calculateTax(price float64) (Vat float64, getFund float64) {
+	Vat = price * 0.09
+	getFund = price * 0.02
+	return
 
 }
 
 func main() {
-	// functional scope
-	var message string = "hello"
-	var price float32 = 34.5
-	fmt.Println(message, price, url, name, data.Name)
-	fmt.Println("helo")
+	Vat, getFund := calculateTax(100)
+	fmt.Println(Vat, getFund)
 
-	SendMessage()
-	{
-		// block scope
-	}
+	// Pointers
+
 }
