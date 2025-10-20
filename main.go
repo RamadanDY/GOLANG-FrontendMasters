@@ -10,6 +10,16 @@ import (
 var url = "https://hellojkhgkuyh.com"
 var name = "RamDev is here "
 
+func init() {
+	fmt.Println("B")
+}
+
+// function to calculate the tax
+
+func calculateTax(price float64) {
+
+}
+
 func main() {
 	// functional scope
 	var message string = "hello"
