@@ -21,7 +21,7 @@ func calculateTax(price float64) (Vat float64, getFund float64) {
 }
 
 func newBD(age *int) {
-	fmt.Printf("the")
+	fmt.Printf("the pointer is %v and the value is $v")
 	*age++
 
 }
