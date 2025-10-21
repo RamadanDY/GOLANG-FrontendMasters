@@ -2,8 +2,6 @@ package main
 
 import (
 	"fmt"
-
-	"frontendmasters.com/go/io/data"
 )
 
 // global scope
@@ -22,10 +20,18 @@ func calculateTax(price float64) (Vat float64, getFund float64) {
 
 }
 
+func newBD(age int) {
+	age = age + 1
+
+}
+
 func main() {
 	Vat, getFund := calculateTax(100)
 	fmt.Println(Vat, getFund)
 
 	// Pointers
+	age := 22
+	newBD(age)
+	fmt.Println(age)
 
 }
