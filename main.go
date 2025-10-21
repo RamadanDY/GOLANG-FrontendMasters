@@ -20,16 +20,18 @@ func calculateTax(price float64) (Vat float64, getFund float64) {
 
 }
 
+// the asterisk tell the parameter is a pointer to the int not just any int
 func newBD(age *int) {
 	fmt.Printf("the pointer is %v and the value is %v", age, *age)
-	*age++
+	// we dereference the pointer ie we get access to the value at that pointer
+	*age = *age + 1
 }
 func main() {
 	Vat, getFund := calculateTax(100)
 	fmt.Println(Vat, getFund)
 
 	// Pointers
-	age := 22
+	age := 2
 	newBD(&age)
 	fmt.Println(age)
 
