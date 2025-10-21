@@ -20,8 +20,8 @@ func calculateTax(price float64) (Vat float64, getFund float64) {
 
 }
 
-func newBD(age int) {
-	age = age + 1
+func newBD(age *int) {
+	*age++
 
 }
 
@@ -31,7 +31,7 @@ func main() {
 
 	// Pointers
 	age := 22
-	newBD(age)
+	newBD(&age)
 	fmt.Println(age)
 
 }
