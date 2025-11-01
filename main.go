@@ -20,6 +20,17 @@ func calculateTax(price float64) (Vat float64, getFund float64) {
 
 }
 
+// panic and defer
+
+func birthday(pointerAge *int) {
+	if *pointerAge > 140 {
+		panic("Too old to be true")
+	}
+	defer fmt.Printf("defered")
+
+	fmt.Print("hello")
+}
+
 // the asterisk tell the parameter is a pointer to the int not just any int
 func newBD(age *int) {
 	fmt.Printf("the pointer is %v and the value is %v", age, *age)
@@ -34,5 +45,6 @@ func main() {
 	age := 2
 	newBD(&age)
 	fmt.Println(age)
+	birthday(&age)
 
 }
