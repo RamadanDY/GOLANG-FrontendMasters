@@ -6,7 +6,7 @@ import (
 
 // global scope
 var url = "https://hellojkhgkuyh.com"
-var name = "RamDev is here "
+var name = "RamDev is he "
 
 func init() {
 	fmt.Println("B")
